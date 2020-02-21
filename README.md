@@ -43,7 +43,6 @@ python build_model.py
 If not, it's ok, a version of the pickle model is included in: model/XGBRegressor.pkl
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Run the application
 
@@ -58,7 +57,7 @@ Open the url that it shows you, it would be:
 http://127.0.0.1:5000/
 ```
 And a window, where all fields must be filled in, must be opened (btw sorry for my poor front-end skills).
-After fill all the files, just press the button "Predict price" and the predicted price will appear.
+After filling all the fields, just press the button "Predict price" and the predicted price will appear.
 
 
 ## Authors
