@@ -6,6 +6,20 @@ This is a complete production project which makes a prediction based in airbnb_l
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
+### Folder structure
+
+* airbnb
+  * api.py: Flask API application
+  * request.py: The request for Flask API
+  * build_model.py: iinitiates a new model, trains the model, and pickle
+  * model
+      * XGBRegressor.pkl
+  * requirements.txt: list of packages that the app will import
+  * data: directory that contains the data file
+      * listings_reduced.csv
+  * template: the initial page where the new data to be predicted will be added
+      * index.html
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
