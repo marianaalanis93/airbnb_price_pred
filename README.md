@@ -57,7 +57,7 @@ Open the url that it shows you, it would be:
 ```
 http://127.0.0.1:5000/
 ```
-And a window, where all fields must be filled in, must be opened (btw sorry for my poor front-end skills
+And a window, where all fields must be filled in, must be opened (btw sorry for my poor front-end skills).
 After fill all the files, just press the button "Predict price" and the predicted price will appear.
 
 
