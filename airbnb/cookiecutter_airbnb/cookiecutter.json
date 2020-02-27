@@ -1,0 +1,25 @@
+{
+  "project_name": "airbnb_cookie",
+  "script_name_build": "model",
+  "csv_path": "'data/listings_reduced.csv'",
+  "target": "'price'",
+  "class_name": "RegressionModel",
+  "def_getData": "getData",
+  "def_preprocess": "preprocess",
+  "def_splitData": "splitData",
+  "def_scaleDataTrain": "scaleDataTrain",
+  "def_scaleDataPredict":"scaleDataPredict",
+  "def_parameterOptimizer":"parameterOptimizer",
+  "def_train": "train",
+  "booster_grid_search": "'model/best_params/best_booster_params.pkl'",
+  "def_metrics": "metrics",
+  "def_pickleModel": "pickleModel",
+  "path_model_pkl": "'model/XGBRegressor.pkl'",
+
+  "script_name_app": "api",
+  "def_cleanDF": "cleanDF",
+  "def_home": "home",
+  "def_predict": "predict",
+  "def_results": "results"
+
+}

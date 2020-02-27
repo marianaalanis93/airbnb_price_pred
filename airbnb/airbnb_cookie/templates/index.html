@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML Airbnb prices prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body style="background-color:powderblue;">
+ <div class="login">
+	   <h1>Airbnb prices prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="id" placeholder="id" required="required" />
+        <input type="text" name="name" placeholder="name" required="required" />
+		<input type="text" name="description" placeholder="description" required="required" />
+
+        <input type="text" name="host_id" placeholder="host_id" required="required" />
+        <input type="text" name="host_name" placeholder="host_name" required="required" />
+        <input type="text" name="host_since" placeholder="host_since" required="required" />
+
+        <input type="text" name="host_about" placeholder="host_about" required="required" />
+        <input type="text" name="host_response_time" placeholder="host_response_time" required="required" />
+        <input type="text" name="host_is_superhost" placeholder="host_is_superhost" required="required" />
+
+        <input type="text" name="host_listings_count" placeholder="host_listings_count" required="required" />
+        <input type="text" name="host_identity_verified" placeholder="host_identity_verified" required="required" />
+        <input type="text" name="latitude" placeholder="latitude" required="required" />
+
+        <input type="text" name="longitude" placeholder="longitude" required="required" />
+        <input type="text" name="room_type" placeholder="room_type" required="required" />
+        <input type="text" name="accommodates" placeholder="accommodates" required="required" />
+
+        <input type="text" name="bathrooms" placeholder="bathrooms" required="required" />
+        <input type="text" name="bedrooms" placeholder="bedrooms" required="required" />
+        <input type="text" name="beds" placeholder="beds" required="required" />
+
+        <input type="text" name="square_feet" placeholder="square_feet" required="required" />
+        <input type="text" name="guests_included" placeholder="guests_included" required="required" />
+        <input type="text" name="minimum_nights" placeholder="minimum_nights" required="required" />
+
+        <input type="text" name="maximum_nights" placeholder="maximum_nights" required="required" />
+        <input type="text" name="availability_90" placeholder="availability_90" required="required" />
+        <input type="text" name="number_of_reviews" placeholder="number_of_reviews" required="required" />
+
+        <input type="text" name="first_review" placeholder="first_review" required="required" />
+        <input type="text" name="last_review" placeholder="last_review" required="required" />
+        <input type="text" name="review_scores_rating" placeholder="review_scores_rating" required="required" />
+
+        <input type="text" name="review_scores_accuracy" placeholder="review_scores_accuracy" required="required" />
+        <input type="text" name="review_scores_cleanliness" placeholder="review_scores_cleanliness" required="required" />
+        <input type="text" name="review_scores_checkin" placeholder="review_scores_checkin" required="required" />
+
+        <input type="text" name="review_scores_communication" placeholder="review_scores_communication" required="required" />
+        <input type="text" name="review_scores_location" placeholder="review_scores_location" required="required" />
+        <input type="text" name="reviews_per_month" placeholder="reviews_per_month" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict price</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+</body>
+</html>
+
